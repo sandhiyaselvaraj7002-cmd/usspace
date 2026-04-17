@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat 💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    ← <span onclick="goHome()">Back</span>
+
+    <img id="profilePic" class="dp">
+
+    <span id="chatName">My Person 💜</span>
+
+    <button onclick="changeName()">✏️</button>
+    <button onclick="document.getElementById('bgInput').click()">🎨</button>
+    <button onclick="document.getElementById('dpInput').click()">👤</button>
+</div>
+
+<input type="file" id="bgInput" hidden onchange="setBackground(event)">
+<input type="file" id="dpInput" hidden onchange="setProfile(event)">
+
+<div id="chatBox" class="chat-box"></div>
+
+<div class="input-area">
+    <input type="text" id="message" placeholder="Type message...">
+    <button onclick="sendMessage()">➤</button>
+</div>
+
+<button class="heart-btn" onclick="missYou()">❤️ Missing You</button>
+
+<button class="notes-btn" onclick="openNotes()">📝 Notes</button>
+
+<script src="script.js"></script>
+</body>
+</html>
